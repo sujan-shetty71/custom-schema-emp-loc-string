@@ -1,29 +1,31 @@
 {
-  "@context": [
-    {
-      "@version": 1.1,
-      "@protected": true,
-      "id": "@id",
-      "type": "@type",
-      "ProofOfEmployee": {
-        "@id": "https://raw.githubusercontent.com/sujan-shetty71/custom-schema-emp-loc/main/proof-of-employee.jsonld#ProofOfEmployee",
-        "@context": {
-          "@version": 1.1,
-          "@protected": true,
-          "id": "@id",
-          "type": "@type",
-          "vocab": "https://github.com/sujan-shetty71/custom-schema-emp-loc/main/proof-of-employee-vocab.md#",
-          "xsd": "http://www.w3.org/2001/XMLSchema#",
-          "isEmployee": {
-            "@id": "vocab:isEmployee",
-            "@type": "xsd:integer"
-          },
-          "gender": {
-            "@id": "vocab:gender",
-            "@type": "xsd:integer"
-          }
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+    "ProofOfEmployee": {
+      "@id": "https://raw.githubusercontent.com/sujan-shetty71/custom-schema-emp-loc-string/main/proof-of-employee.jsonld#ProofOfEmployee",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "vocab": "https://github.com/sujan-shetty71/custom-schema-emp-loc-string/main/proof-of-employee-vocab.md#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "isEmployee": {
+          "@id": "vocab:isEmployee",
+          "@type": "xsd:integer"
+        },
+        "gender": {
+          "@id": "vocab:gender",
+          "@type": "xsd:string"
+        },
+        "location": {
+          "@id": "vocab:location",
+          "@type": "xsd:string"
         }
       }
     }
-  ]
+  }
 }
